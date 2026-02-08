@@ -1,0 +1,280 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "~antd/dist/antd.css";
+
+body {
+  position: relative;
+  color: white;
+  height: 100vh;
+  font-family: Arial, Helvetica, Helvetica Neue, serif;
+  overflow-y: hidden;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+}
+
+p {
+  font-size: 24px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#components-layout-demo-custom-trigger .trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#sidebar .logo-container {
+  height: 65px;
+  padding: 6px 4px 4px 4px;
+  text-align: center;
+}
+
+#sidebar .logo-container .logo-content {
+  background: rgba(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar .logo-container .logo-content img {
+  width: auto;
+  max-height: 100%;
+  padding: 10px;
+}
+
+.site-layout {
+  overflow: hidden;
+}
+
+.site-layout .site-layout-header {
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+}
+
+.site-layout-header-right-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.site-layout-header-right-item:hover {
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.site-layout-header-right {
+  display: flex;
+  float: right;
+  height: 64px;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #e8e9ec;
+}
+
+.page-header-container {
+  font-size: 20px;
+  padding-bottom: 15px;
+  display: flex;
+}
+
+.page-header-main {
+  font-weight: bold;
+  color: #434343;
+}
+
+.site-feature-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.ant-table-thead > tr > th {
+  background: #f2f2f2 !important;
+}
+
+/**
+ *  default-theme
+ **/
+.default-theme #sidebar {
+  background-color: #049689;
+}
+
+.default-theme #sidebar .cb-menu {
+  background-color: #049689;
+}
+
+.default-theme
+  .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal)
+  .ant-menu-item-selected {
+  background-color: #46e0d2 !important;
+}
+
+.default-theme .visitor-page-header-count-1 {
+  background-color: rgb(166, 224, 219);
+}
+
+.default-theme .visitor-page-header-count-2 {
+  background-color: rgb(88, 202, 191);
+}
+
+.default-theme .visitor-page-header-count-3 {
+  background-color: rgb(4, 150, 137);
+}
+
+.default-theme .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background: rgb(0, 119, 109);
+}
+
+.default-theme .page-header-sub {
+  font-weight: bold;
+  color: rgb(59, 195, 183);
+}
+
+.default-theme .table-section-header {
+  font-size: 14px;
+  background-color: #049689;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+/**
+ *  dormakaba-theme
+ **/
+.dormakaba-theme #sidebar {
+  background-color: #003594;
+}
+
+.dormakaba-theme #sidebar .cb-menu {
+  background-color: #003594;
+}
+
+.dormakaba-theme
+  .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal)
+  .ant-menu-item-selected {
+  background-color: #1890ff !important;
+}
+
+.dormakaba-theme .visitor-page-header-count-1 {
+  background-color: #6d9eeb;
+}
+
+.dormakaba-theme .visitor-page-header-count-2 {
+  background-color: #a5c2f4;
+}
+
+.dormakaba-theme .visitor-page-header-count-3 {
+  background-color: #1155cc;
+}
+
+.dormakaba-theme .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background: #002c7d;
+}
+
+.dormakaba-theme .page-header-sub {
+  font-weight: bold;
+  color: #3b79d8;
+}
+
+.dormakaba-theme .table-section-header {
+  font-size: 14px;
+  background-color: #1155cc;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+/**
+ *  occ-theme
+ **/
+.occ-theme #sidebar {
+  background-color: #8c8e8f;
+}
+
+.occ-theme #sidebar .cb-menu {
+  background-color: #8c8e8f;
+}
+
+.occ-theme
+  .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal)
+  .ant-menu-item-selected {
+  background-color: #d4d4d4 !important;
+}
+
+.occ-theme .visitor-page-header-count-1 {
+  background-color: #6d9eeb;
+}
+
+.occ-theme .visitor-page-header-count-2 {
+  background-color: #a5c2f4;
+}
+
+.occ-theme .visitor-page-header-count-3 {
+  background-color: #1155cc;
+}
+
+.occ-theme .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background: #7a7c7d;
+}
+
+.occ-theme .page-header-sub {
+  font-weight: bold;
+  color: #8c8e8f;
+}
+
+.occ-theme .table-section-header {
+  font-size: 14px;
+  background-color: #8c8e8f;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.fr-image .ant-image,
+.fr-image .ant-upload.ant-upload-select {
+  display: block !important;
+}
